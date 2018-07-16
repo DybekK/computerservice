@@ -1,0 +1,198 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruluko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <title>Serwis komputerowy</title>
+    <script>
+        function menu() {
+            var a = document.getElementById('options');
+            if (a.className === "options-normal") {
+                a.className += " options-responsive";
+            } else {
+                a.className = "options-normal";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="padding-left-right">
+        <div class="navbar-responsive">
+            <a class="logo" href="#">
+                <h2>Company</h2>
+                <div class="circle"></div>
+                <h2>Name</h2>
+            </a>
+            <div onclick="menu()" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="navbar">
+            <a class="logo" href="#">
+                <h2>Company</h2>
+                <div class="circle"></div>
+                <h2>Name</h2>
+            </a>
+            <div id="options" class="options-normal">
+                <a href="#">HOME</a>
+                <a href="#">O NAS</a>
+                <a href="#">USŁUGI</a>
+                <a href="#">STAŻ</a>
+                <a href="#">KONTAKT</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="hero padding-left-right">
+            <div class="row middle-xs end-xs">
+                <h2 class="col-xs-12 row end-xs middle-xs">
+                    Serwis komputerowy
+                    <div class="circle"></div>Company Name
+                </h2>
+                <div class="col-xs-12 row end-xs">
+                    <div class="hr"></div>
+                </div>
+                <h1 class="col-xs-12 col-md-5 row end-xs">
+                    Tworzymy technologię z myślą o tobie
+                </h1>
+            </div>
+        </div>
+
+        <div class="about-us padding-left-right">
+            <h1 class="header">O naszej firmie</h1>
+            <div class="hr-blue"></div>
+
+            <div class="row middle-xs">
+                <div class="col-xs-12 col-md-5 row center-xs">
+                    <p>Company Name to prowadzona przez doświadczonych ekspertów firma, znajdująca się na rynku od 1995 roku. W raz z upływem lat technologia staje się to coraz bardziej skomplikowana, potrafimy temu podołać, nasz serwis jest wspierany przez czołowych producentów sprzętu. Rekomenduje nas wielu zadowolonych klientów. Zostań nim i ty !</p>
+                    <a href="#" class="button-blue">
+                    Zobacz więcej
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-1"></div>
+                <div class="col-xs-12 col-md-6 row center-xs">
+                    <img src="assets/about-us/circle.svg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="offers padding-left-right">
+            <h1 class="header">Oferujemy najwyższej klasy wsparcie oraz doradztwo techniczne</h1>
+            <div class="hr-blue"></div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4 row center-xs">
+                    <img class="col-xs-12" src="assets/offers/laptop.svg">
+
+                    <h3 class="col-xs-12">Naprawa komputerów domowych</h3>
+                    <p class="col-xs-12">Oferujemy naprawę komputerów domowych oraz urządzeń peryferyjnych w każdy dzień, oferujemy wsparcie systemowe oraz sprzętowe
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4 row center-xs">
+                    <img class="col-xs-12" src="assets/offers/apple.svg">
+
+                    <h3 class="col-xs-12">Wsparcie dla firmy Apple</h3>
+                    <p class="col-xs-12">Posiadamy odpowiednie uprawnienia oraz sprzęt aby dokonać przeglądu oraz naprawy sprzętu firmy Apple, oferujemy dodatkowe gwarancję firmy
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4 row center-xs middle-xs">
+                    <img class="col-xs-12" src="assets/offers/person.svg">
+
+                    <h3 class="col-xs-12">Doradztwo biznesowe</h3>
+                    <p class="col-xs-12">Nasz zespół oferuje doradztwo dla firm w wyborze sprzętu oraz oprogramowania, dodatkowo zapewnia wsparcie dla nowych klientów
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cost padding-left-right">
+            <h1 class="header">Oferty i cennik</h1>
+            <div class="hr-blue"></div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6 row center-xs">
+                    <img src="assets/offers/pc-wires.jpg">
+                </div>
+                <div class="col-xs-12 col-md-6 row middle-xs around-xs">
+                    <p class="col-xs-12">Jeśli masz problem i szukasz pomocy lub chcesz po prostu skorzystać z rady doświadczonych ekspertów to śmiało zwróć się do nas !</p>
+                    <p class="col-xs-12">Pełną listę świadczonych przez nas usług możesz znaleźć w tej zakładce klikajjąc przycisk poniżej. Możesz także pobrać całą listę w formacie PDF
+                    </p>
+                    <a class="button-blue" href="#">
+                    Zobacz więcej
+                    </a>
+                    <a class="button-light" href="#">
+                    Pobierz PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sponsors padding-left-right">
+            <h1 class="header">Sponsorzy</h1>
+            <div class="hr-blue"></div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <h2>SPONSOR NAME</h2>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h2>SPONSOR NAME</h2>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h2>SPONSOR NAME</h2>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h2>SPONSOR NAME</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer padding-left-right">
+            <div class="info">
+                <p>+7(212) 654-33-22</p>
+                <p>+7(212) 324-33-42</p>
+                <p>imple@gmail.com</p>
+            </div>
+            <div class="info">
+                <p>Serwis komputerowy</p>
+                <p>ul. Toruńska 34</p>
+                <p>87-141 Toruń</p>
+            </div>
+            <div class="info">
+                <p>Godziny otwarcia</p>
+                <p>Pn-Pt <span>8-20</span></p>
+                <p>Sob-Nd <span>9-19</span></p>
+            </div>
+        </div>
+        <div class="footer padding-left-right">
+            <div class="social-media">    <a href="#"> <img src="assets/footer/facebook.svg"></a> 
+            <a href="#"><img src="assets/footer/twitter.svg"></a>
+            <a href="#"><img src="assets/footer/googleplus.svg"></a>
+            <a href="#"><img src="assets/footer/instagram.svg"></a></div>
+      
+             <a class="logo" href="#">
+                <h2>Company</h2>
+                <div class="circle"></div>
+                <h2>Name</h2>
+            </a>
+        </div>
+        <div class="copyrights">
+        <h2>Agencja Imple wszystkie prawa zastrzeżone &copy; 2018</h2>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

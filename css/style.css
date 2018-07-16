@@ -6,11 +6,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.title {
+    margin: 6.2em 0;
+}
+
 .header {
     font-weight: 100;
     font-size: 2.7em;
     color: #279becff;
-    margin: 1em 0 0.5em 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -18,7 +22,7 @@ body {
     height: 0.12em;
     background-color: #279becff;
     width: 20em;
-    margin: 2em 0 2em 0;
+    margin: 2em 0 0 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -85,6 +89,11 @@ body {
     color: #7e7b7b;
 }
 
+.options-normal a:hover{
+     color: #279becff;
+    border-bottom: 1px solid #279becff;
+    transition: 0.5s;
+}
 
 .hero {
 
@@ -134,9 +143,11 @@ body {
     text-decoration: none;
     color: white;
     background-color: #279becff;
+       border: 1px solid #279becff;
     padding: 1em 1.1em;
     border-radius: 4px;
     font-weight: 100;
+        transition: 0.5s;
 }
 
 .button-light {
@@ -149,8 +160,20 @@ body {
     padding: 1em 1.1em;
     border-radius: 4px;
     font-weight: 100;
+        transition: 0.5s;
 }
 
+.button-blue:hover{
+    background-color: #fff;
+    color:  #279becff;
+    transition: 0.5s;
+    border: 1px solid  #279becff;
+}
+.button-light:hover{
+      background-color:   #279becff;
+    color:  #fff;
+    transition: 0.5s;
+}
 .offers h3 {
     font-weight: 100;
     text-align: center;
@@ -168,6 +191,10 @@ body {
     height: 23em;
 }
 
+.sponsors {
+    margin-bottom: 3em;
+}
+
 .sponsors h2 {
     font-weight: 100;
     font-size: 2em;
@@ -183,40 +210,45 @@ body {
     align-items: center;
 }
 
-.info{
+.info {
     margin: 0 1em;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.info p{
+.info p {
     margin: 0.5em 0;
 }
-.info span{
+
+.info span {
     margin: 0 0 0 1.2em;
 }
 
-.footer img{
+.social-media img {
     padding: 1em;
     height: 2em;
 }
 
-.footer .logo{
+.footer .logo {
     margin-left: 1em;
     font-size: 1.2em;
     color: #fff;
 }
-.footer .circle{
+
+.footer .circle {
     background-color: #fff;
 }
 
-.copyrights{
+.copyrights {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1em 0; 
+    padding: 1em 0;
 }
-.copyrights h2{
+
+.copyrights h2 {
     margin: 0;
     padding: 0;
     font-size: 1.3em;
@@ -225,36 +257,49 @@ body {
 
 
 
-@media only screen and (max-width: 1200px){
-    .button-light,.button-blue{
+@media only screen and (max-width: 1200px) {
+    .options-normal a {
+        margin: 0 1.6em;
+    }
+    .copyrights h2 {
+        font-size: 1em;
+    }
+    .button-light,
+    .button-blue {
         font-size: 1.2em;
     }
-    .cost img{
-        height:17em;
+    .cost img {
+        height: 17em;
     }
 }
-@media only screen and (max-width: 600px) {
-    .header{
+
+@media only screen and (max-width:879px) {
+    .social-media img {
+        padding: 1em;
+        height: 1.4em;
+    }
+    .footer .logo {
+        margin: 0;
+    }
+    .header {
         font-size: 1.9em;
     }
-    .hr-blue{
+    .hr-blue {
         width: 10em;
         margin-bottom: 6em;
     }
-.cost img {
-    height: 12em;
-}
-    .about-us img{
-        height: 20em;
+    .cost img {
+        height: 12em;
+    }
+    .about-us img {
+        height: 25em;
         margin: 4em 0;
     }
-    .footer{
-        flex-direction: column;
+
+    .footer .info {
+        margin: 0 1.4em;
     }
-    .footer .info{
-        margin: 1em 0;
-    }
-    
+
     .hero h1 {
         font-size: 2em;
     }
@@ -304,7 +349,7 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .hamburger div {
         background-color: black;
         width: 25px;
@@ -325,5 +370,39 @@ body {
 
     }
 
+}
 
+@media only screen and (max-width: 600px) {
+    .footer .info {
+        margin: 1em 0;
+    }
+    .about-us img {
+        height: 15em;
+        margin: 4em 0;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .sponsors h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 20em;
+
+    }
+    .padding-left-right {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+
+    .hero h1 {
+        font-size: 1.4em;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
 }

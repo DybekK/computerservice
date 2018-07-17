@@ -96,7 +96,7 @@ body {
 }
 
 .hero {
-
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     background-image: url(../assets/hero/hero.jpeg);
